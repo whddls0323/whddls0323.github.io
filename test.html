@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>html5 연습</title>
+
+    <style>
+        body{background-color:lightyellow;}
+        h2{color:darkblue;text-align:center;}
+        h3{color:blue;}
+        hr{border:3px dashed gray;}
+        a{text-decoration:none;}
+        li:hover{background-color: lightpink;}
+        img:hover{box-shadow: 2px 2px 10px black;}
+        .box{border-left-width:4px;border-left-style:dotted;border-left-color:red;}
+        .multi{color:yellow;text-shadow:2px 2px 2px black,0px 0px 25px blue,0px 0px 5px darkblue;}
+    </style>
+</head>
+<body>
+    <header>
+        <h2 class="multi">앨런 튜링 (Alan Mathison Turing, 1912년 6월 23일 ~ 1954년 6월 7일)</h2>
+        <p>
+            잉글랜드의 수학자, 암호학자, 논리학자, 컴퓨터과학자이며 
+            컴퓨터 과학의 선구적 인물이다. 알고리즘과 계산 개념을 
+            튜링 기계라는 추상 모델을 통해 형식화함으로써 컴퓨터
+            과학의 발전에 지대한 공헌을 했다.
+        </p>
+
+        <figure>
+            <img src="https://image.ahnlab.com/comm/info/1312260093411361.png" width="200px">
+            <figcaption>앨런 생전의 모습</figcaption>
+        </figure>
+
+        <img src="cat.jpg">
+    </header>
+    <nav>
+        <h3><a href="https://ko.wikipedia.org/wiki/%EC%95%A8%EB%9F%B0_%ED%8A%9C%EB%A7%81" target="_blank">주요 업적</a></h3>
+        <ul>
+            <li><a href="#no1">에니그마 암호 해독</a></li>
+            <li><a href="#no1">튜링 기계</a></li>
+            <li><a href="#no1">튜링 테스트</a></li>
+            <li><a href="#no1">후세에 끼친 영향</a></li>
+        </ul>
+    </nav>
+    <section>
+        <article id="no1">
+            <h3 class="box">에니그마 해독</h3>
+            <p>
+                에니그마는 암호 작성과 해독을 돕는 기계로,
+                1918년 아르투스 슈르비우스에 의해 처음 고안됨.
+                이 기계는 제 2차 세계 대전 동안 독일군이 
+                군사 관련 정보를 암호화하는 데 쓰임.
+                작동 원리는 다중치환암호를 개선한 것임.
+                에니그마는 기계적으로 다중치환 암호를 구현하고,
+                이에 스크램블러를 추가해 보안성을 강화함. 
+                그러나 튜링은 에니그마가 암호화와 복호화 둘 다 할 수 있다는 것에서
+                암호문의 스크램블러에 의한 효과를 없앴고, 자주 쓰이는 평문의 목록인 크립을
+                이용해서 이론적으로 에니그마를 해독할 수 있었음.
+            </p>
+        </article>
+        <article id="no2">
+            <h3 class="box">튜링 기계</h3>
+            <p>
+                튜링 기계는 튜링이 알고리즘을 설명하기 위해 도입한 가상의 기계이다.
+                이 기계는 한정된 종류의 기호 중 하나를 기록할 수 있는 칸들이 무한히 이어진 띠와
+                각 칸의 정보를 읽고 수정하는 기계로 이루어져 있다. 그리고 튜링 머신의 상태와 칸에
+                기록된 기호에 따라 지정된 절차를 수행한다. 튜링 머신이 수행하는 절차는 
+                1. 현재 기계가 위치하는 칸의 기호를 수정 2. 띠의 위치 이동 
+                3. 튜링 머신의 상태 변경 이 있다.
+            </p>
+        </article>
+        <article id="no3">
+            <h3 class="box">튜링 테스트</h3>
+            <p>
+                1950년 앨런 튜링에 의해 개발된 튜링 테스트(turing test)는 
+                인간의 것과 동등하거나 구별할 수 없는 지능적인 행동을 보여주는
+                기계의 능력에 대한 테스트다. 튜링은 인간 평가자가 인간과 같은 반응을
+                일으키도록 설계된 기계 사이의 자연 언어 대화를 판단할 것을 제안했다.
+                평가자는 대화의 두 파트너 중 한 명이 기계라는 것을 알고 모든 참가자는
+                서로 분리될 것이다. 대화는 컴퓨터 키보드와 화면과 같은 
+                텍스트 전용 채널로 제한되어, 그 결과는 단어를 연설로 렌더링하는
+                기계의 능력에 좌우되지 않을 것이다.
+                [1] 평가자가 기계와 인간을 확실하게 구분할 수 없는 경우, 그 기계는 시험에 합격했다고 볼 수 있다.
+                시험 결과는 기계의 질문에 대한 정답을 제시하는 능력을 평가하는 것이 아니라,
+                기계가 제시하는 답이 얼마나 인간다운 대답인지를 평가한다.
+            </p>
+        </article>
+        <article>
+            <h3 class="box">후세에 끼친 영향</h3>
+            <p>
+                튜링은 수학, 암호학, 생물학 등 많은 분야에서 다양한 연구 활동을 했지만,
+                특히 전산학(컴퓨터 과학) 분야에 끼친 영향이 크기 때문에 전산학(컴퓨터 과학)의
+                아버지라고 불린다. 그가 구상한 튜링 기계의 무한히 긴 띠는 컴퓨터의 메모리에,
+                기호를 읽는 기계는 컴퓨터의 중앙 처리 장치(CPU)에 비유할 수 있다. 
+                또한 튜링 기계의 한 종류인 범용 튜링 기계는 프로그램을 내장해서 작동하는
+                현대의 컴퓨터를 많이 닮아 있다. 이외에도 콜로서스 개발에 간접적인 기여를 했다.
+            </p>
+        </article>
+    </section>
+    <hr>
+    <h3>기본구조를 가진 표</h3>
+    <hr>
+    <table border="1" width="200" height="200">
+        <caption>1학기 성적</caption>
+        <thead>
+            <tr>
+                <th>이름</th><th>HTML</th><th>CSS</th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <tr>
+                <th>합</th><th>255</th><th>230</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr><td>김석직</td><td>80</td><td>70</td></tr>
+            <tr><td>김남준</td><td>95</td><td>99</td></tr>
+            <tr><td>정호석</td><td>40</td><td>61</td></tr>
+        </tbody>
+    </table>
+
+    <br><br><br>
+
+    <table border="1" width="200" height="200">
+        <tr>
+            <td rowspan="3">a</td><td colspan="2">b</td>
+        </tr>
+        <tr>
+            <td rowspan="2">c</td><td>d</td>
+        </tr>
+        <tr>
+            <td>e</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h2>설문지</h2>
+    <p>부탁드립니다.</p>
+    <form>
+        <fieldset>
+            <legend>학생 정보</legend>
+            <p>
+                <span>학년: </span>
+                <label>
+                    <input type="radio" name="grade" value="1" checked>1학년
+                </label>
+                <label>
+                    <input type="radio" name="grade" value="2">2학년
+                </label>
+                <label>
+                    <input type="radio" name="grade" value="3">3학년
+                </label>
+                <label>
+                    <input type="radio" name="grade" value="4">4학년
+                </label>
+            </p>
+            <p>
+                <span>성별: </span>
+                <label>
+                    <input type="radio" name="gender" value="m" checked>남성
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="f">여성
+                </label>
+            </p>
+        </fieldset>
+        <p>
+            <span>관심분야</span>
+            <select>
+                <option value="1">모바일 소프트웨어
+                <option value="2">웹 공학
+                <option value="3">빅데이터
+                <option value="4">디지털 콘텐츠 및 가상 현실
+            </select>
+        </p>
+        <p>
+            <span>진로</span>
+            <label>
+                <input type="checkbox" name="dev" value="1" checked>개발
+            </label>
+            <label>
+                <input type="checkbox" name="dev" value="2">기획
+            </label>
+            <label>
+                <input type="checkbox" name="dev" value="3">영업
+            </label>
+            <label>
+                <input type="checkbox" name="dev" value="4">창업
+            </label>
+        </p>
+        <textarea cols="50" rows="10" placeholder="글을 써주세요."></textarea>
+        <p><span>남기고 싶은말</span></p>
+    </form>
+
+    <footer>2023년 9월 작성. 위키피디어 참고</footer>
+
+    <br><br><br><br><br><br>
+</body>
+</html>
